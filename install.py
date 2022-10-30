@@ -17,7 +17,6 @@ with open("DroidSansMono.otf", "wb") as f:
 shutil.move('DroidSansMono.otf', '/usr/local/share/fonts')
 os.remove('DroidSansMono.otf')
 os.system('cd')
-os.system('git clone https://github.com/gwimtux/dotfiles.git')
 os.system('mv dotfiles/config .config')
 os.system('sudo apt install nodejs')
 os.system('sudo apt install npm')
