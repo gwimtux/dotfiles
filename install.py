@@ -8,6 +8,7 @@ import requests
 os.system('clear')
 url = '''https://raw.githubusercontent.com/ryanoasis/nerd-fonts/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20Nerd%20Font%20Complete%20Mono.otf'''
 
+
 # fetch file
 response = requests.get(url)
 # opens a file to download the .otf font
@@ -15,6 +16,9 @@ with open("DroidSansMono.otf", "wb") as f:
     f.write(response.content)
 shutil.move('DroidSansMono.otf', '/usr/local/share/fonts')
 os.remove('DroidSansMono.otf')
+os.system('cd')
+os.system('git clone https://github.com/gwimtux/dotfiles.git')
+os.system('mv dotfiles/config .config')
 os.system('sudo apt install nodejs')
 os.system('sudo apt install npm')
 os.system('sudo npm install -g yarn')
