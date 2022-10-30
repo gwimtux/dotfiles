@@ -16,8 +16,8 @@ with open("DroidSansMono.otf", "wb") as f:
     f.write(response.content)
 shutil.move('DroidSansMono.otf', '/usr/local/share/fonts')
 #os.remove('DroidSansMono.otf')
-sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
-       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+os.system("""sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'""")
 os.system('cd')
 os.system('git clone https://github.com/gwimtux/dotfiles.git')
 os.system('mv dotfiles/config .config')
@@ -32,4 +32,3 @@ os.system('yarn install')
 os.system('yarn build')
 os.system('sudo apt install python3-pip')
 os.system('pip3 install jedi')
-
