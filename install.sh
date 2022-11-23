@@ -7,8 +7,8 @@ pacman -S alacritty --noconfirm
 pacman -S rofi --noconfirm
 pacman -S rofi-calc --noconfirm
 pacman -S papirus-icon-theme-git --noconfirm
-pacman -S python-pip
+pacman -S python-pip --noconfirm
 pip install --user bumblebee-status
-mv ~/comfyrice/config ~/.config
-mv ~/comfyrice/fonts ~/.fonts
+mv ~/dotfiles/config ~/.config
+mv ~/dotfiles/fonts ~/.fonts
 
