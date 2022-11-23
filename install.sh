@@ -9,8 +9,8 @@ sudo pacman -S rofi-calc --noconfirm
 sudo pacman -S papirus-icon-theme-git --noconfirm
 sudo pacman -S python-pip --noconfirm
 pip install --user bumblebee-status
-mkdir -p /usr/local/share/fonts
-mv /home/$USER/dotfiles/config/* /home/$USER/.config
-mv /home/$USER/dotfiles/fonts/* /usr/local/share/fonts/
-mv /home/$USER/dotfiles/gruvbox-dark.rasi /usr/share/rofi/themes/
+sudo mkdir -p /usr/local/share/fonts
+sudo mv /home/$USER/dotfiles/config/* /home/$USER/.config
+sudo mv /home/$USER/dotfiles/fonts/* /usr/local/share/fonts/
+sudo mv -f /home/$USER/dotfiles/gruvbox-dark.rasi /usr/share/rofi/themes/
 
