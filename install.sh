@@ -9,6 +9,7 @@ pacman -S rofi-calc --noconfirm
 pacman -S papirus-icon-theme-git --noconfirm
 pacman -S python-pip --noconfirm
 pip install --user bumblebee-status
-mv ~/dotfiles/config ~/.config
-mv ~/dotfiles/fonts ~/.fonts
+mkdir .fonts
+mv /home/$USER/dotfiles/config /home/$USER/.config
+mv /home/$USER/dotfiles/fonts /home/$USER/.fonts
 
