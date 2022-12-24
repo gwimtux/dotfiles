@@ -1,6 +1,7 @@
 #!/bin/bash
 
 
+cd
 sudo pacman -Syyu --noconfirm
 sudo pacman -S rofi-emoji --noconfirm
 sudo pacman -S alacritty --noconfirm
