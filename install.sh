@@ -20,3 +20,4 @@ sudo mv /home/$USER/dotfiles/config/* /home/$USER/.config
 sudo mv /home/$USER/dotfiles/fonts/* /usr/local/share/fonts/
 sudo mv /home/$USER/dotfiles/gwim.rasi /usr/share/rofi/themes/
 curl https://i.pinimg.com/originals/96/5f/be/965fbe493765ac016bb06e26461b9530.png -o ~/Pictures/wallpaper.png
+#rm -rvf dotfiles
