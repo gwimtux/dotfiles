@@ -4,6 +4,7 @@
 cd
 mkdir Pictures
 sudo pacman -Syyu --noconfirm
+sudo pacman -S git
 sudo pacman -S rofi-emoji --noconfirm
 sudo pacman -S alacritty --noconfirm
 sudo pacman -S rofi --noconfirm
@@ -11,6 +12,8 @@ sudo pacman -S rofi-calc --noconfirm
 sudo pacman -S papirus-icon-theme-git --noconfirm
 sudo pacman -S python-pip --noconfirm
 pip install --user bumblebee-status
+cd
+git clone https://github.com/gwimtux/fraction-killer.git
 sudo mkdir -p /usr/local/share/fonts
 sudo rm -rf /home/$USER/.config/*
 sudo mv /home/$USER/dotfiles/config/* /home/$USER/.config
